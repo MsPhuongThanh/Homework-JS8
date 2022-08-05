@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Homework-JS8</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- 1.  Tạo mảng  -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header"></div>
+            <div class="card-body">
+              <div class="form-group">
+                <label>Nhập các số bất kỳ vào mảng  </label>
+                <input
+                  type="number"
+                  placeholder="nhập số"
+                  id="addNumber"
+                  class="form-control"
+                  aria-describedby="helpId"
+                />
+              </div>
+            </div>
+            <div id="array" class="btn btn-success" onlick="number()">
+              Thêm số vào mảng
+            </div>
+            <div
+              id="result"
+              style="display: none"
+              class="alert alert-success"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. Tính tổng các số dương trong mảng  -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <div class="form-group">
+                <label>Tính tổng các số dương trong mảng </label>
+              </div>
+            </div>
+            <div id="array" class="btn btn-success" onlick="sum()">
+              Tổng các số dương trong mảng là:
+            </div>
+            <div
+              id="get"
+              style="display: none"
+              class="alert alert-success"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. Tìm số nhỏ nhất trong mảng  -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <div class="form-control">
+                <label>Tìm số nhỏ nhất trong mảng </label>
+              </div>
+            </div>
+            <div id="array" class="btn btn-success" onlick="find1()">
+              Số nhỏ nhất trong mảng là :
+            </div>
+            <div
+              id="findmin"
+              style="display: none"
+              class="alert alert-success"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. Tìm số dương nhỏ nhất trong mảng -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <div class="form-control">
+                <label>Tìm số dương nhỏ nhất trong mảng </label>
+              </div>
+            </div>
+            <div id="array" class="btn btn-success" onlick="find2()">
+              Số dương nhỏ nhất trong mảng là :
+            </div>
+            <div
+              id="minpositive"
+              style="display: none"
+              class="alert alert-success"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5. Tìm số chẵn cuối cùng trong mảng. Nếu mảng không có giá trị chẵn
+    thì trả về -1 -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <div class="form-control">
+                <label>Tìm số chẵn cuối cùng trong mảng </label>
+              </div>
+            </div>
+            <div id="array" class="btn btn-success" onlick="even()">
+              Số chẵn cuối cùng trong mảng là :
+            </div>
+            <div
+              id="find3"
+              style="display: none"
+              class="alert alert-success"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 6.Đổi chỗ 2 giá trị trong mảng theo vị trí  -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <div class="form-control">
+                <label> Cho phép đổi chỗ 2 giá trị bất kỳ trong mảng </label>
+              </div>
+              <div class="form-group">
+                <label>Nhập thứ tự của số thứ nhất</label>
+                <input  type="number"  placeholder="Thứ tự của số thứ nhất"
+                id="order1" class="form-control" aria-describedby="helpId" />
+            </div>
+            <div class="form-group">
+                <label>Nhập thứ tự của số thứ hai</label>
+                <input  type="number"  placeholder="Thứ tự của số thứ hai"
+                id="order2" class="form-control"maria-describedby="helpId" />
+            </div>
+
+        </div>
+            </div>
+            <div id="array" class="btn btn-success" onlick="exchange()">
+              Danh sách mảng sau khi đổi chỗ :
+            </div>
+            <div
+              id="exchange"
+              style="display: none"
+              class="alert alert-success"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 7. Sắp xếp mảng theo thứ tự tăng dần  -->
+    <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body">
+                <div class="form-control">
+                  <label> Sắp xếp mảng theo thứ tự tăng dần </label>
+                </div>
+              </div>
+              <div id="array" class="btn btn-success" onlick="arrange()">
+                Thứ tự tăng dần các số trong mảng là :
+              </div>
+              <div
+                id="arrange"
+                style="display: none"
+                class="alert alert-success"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 8. Tìm số nguyên tố đầu tiên trong mảng. 
+        Nếu không có số nguyên tố thì trả về -1 -->
+        <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="form-control">
+                      <label> Tìm số nguyên tố đầu tiên trong mảng </label>
+                    </div>
+                  </div>
+                  <div id="array" class="btn btn-success" onlick="prime()">
+                    Số nguyên tố đầu tiên trong mảng là :
+                  </div>
+                  <div
+                    id="prime"
+                    style="display: none"
+                    class="alert alert-success"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 9. Nhập thêm 1 mảng số thực, tìm xem trong mảng có bao nhiêu số nguyên -->
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="form-control">
+                      <label> Số lượng số nguyên trong mảng   </label>
+                    </div>
+                  </div>
+                  <div class="form-contrl">
+                      <label> Nhập thêm số thực </label>
+                      <input type="number" placeholder="Nhập thêm số"
+                      id="addNumber2" class="form-control" aria-describedby="helpId">
+                  </div>
+                </div>
+                <div id="array" class="btn btn-success" onlick="addmoreNumber()">Thêm số thực</div>
+                <div id="addmore" style="display:none;" class="alert alert-success"></div>
+                <div id="array" class="btn btn-success" onlick="countNumber()">Số lượng số nguyên></div>
+                <div id="countNumber" style="display:none;" class="alert alert-success"></div>
+              </div>
+            </div>
+          </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
