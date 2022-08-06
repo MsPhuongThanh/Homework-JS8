@@ -23,20 +23,21 @@
       <div class="row">
         <div class="col-md-6">
           <div class="card">
+            <h1> Homework-JS8 </h1>
             <div class="card-header"></div>
             <div class="card-body">
               <div class="form-group">
-                <label>Nhập các số bất kỳ vào mảng  </label>
+                <label>Nhập các số bất kỳ vào mảng</label>
                 <input
                   type="number"
                   placeholder="nhập số"
-                  id="addNumber"
+                  id="addnumber"
                   class="form-control"
                   aria-describedby="helpId"
                 />
               </div>
             </div>
-            <div id="array" class="btn btn-success" onlick="number()">
+            <div id="btninnumber" class="btn btn-success" onlick="number()">
               Thêm số vào mảng
             </div>
             <div
@@ -59,7 +60,7 @@
                 <label>Tính tổng các số dương trong mảng </label>
               </div>
             </div>
-            <div id="array" class="btn btn-success" onlick="sum()">
+            <div id="btninnumber" class="btn btn-success" onlick="sum()">
               Tổng các số dương trong mảng là:
             </div>
             <div
@@ -82,7 +83,7 @@
                 <label>Tìm số nhỏ nhất trong mảng </label>
               </div>
             </div>
-            <div id="array" class="btn btn-success" onlick="find1()">
+            <div id="btninnumber" class="btn btn-success" onlick="find1()">
               Số nhỏ nhất trong mảng là :
             </div>
             <div
@@ -105,7 +106,7 @@
                 <label>Tìm số dương nhỏ nhất trong mảng </label>
               </div>
             </div>
-            <div id="array" class="btn btn-success" onlick="find2()">
+            <div id="btninnumber" class="btn btn-success" onlick="find2()">
               Số dương nhỏ nhất trong mảng là :
             </div>
             <div
@@ -129,7 +130,7 @@
                 <label>Tìm số chẵn cuối cùng trong mảng </label>
               </div>
             </div>
-            <div id="array" class="btn btn-success" onlick="even()">
+            <div id="btninnumber" class="btn btn-success" onlick="even()">
               Số chẵn cuối cùng trong mảng là :
             </div>
             <div
@@ -164,7 +165,7 @@
 
         </div>
             </div>
-            <div id="array" class="btn btn-success" onlick="exchange()">
+            <div id="btninnumber" class="btn btn-success" onlick="exchange()">
               Danh sách mảng sau khi đổi chỗ :
             </div>
             <div
@@ -187,11 +188,11 @@
                   <label> Sắp xếp mảng theo thứ tự tăng dần </label>
                 </div>
               </div>
-              <div id="array" class="btn btn-success" onlick="arrange()">
+              <div id="btninnumber" class="btn btn-success" onlick="arrange()">
                 Thứ tự tăng dần các số trong mảng là :
               </div>
               <div
-                id="arrange"
+                id="arrangeNumber"
                 style="display: none"
                 class="alert alert-success"
               ></div>
@@ -211,7 +212,7 @@
                       <label> Tìm số nguyên tố đầu tiên trong mảng </label>
                     </div>
                   </div>
-                  <div id="array" class="btn btn-success" onlick="prime()">
+                  <div id="btninnumber" class="btn btn-success" onlick="prime()">
                     Số nguyên tố đầu tiên trong mảng là :
                   </div>
                   <div
@@ -240,13 +241,35 @@
                       id="addNumber2" class="form-control" aria-describedby="helpId">
                   </div>
                 </div>
-                <div id="array" class="btn btn-success" onlick="addmoreNumber()">Thêm số thực</div>
+                <div id="btninnumber" class="btn btn-success" onlick="addmoreNumber()">Thêm số thực</div>
                 <div id="addmore" style="display:none;" class="alert alert-success"></div>
-                <div id="array" class="btn btn-success" onlick="countNumber()">Số lượng số nguyên></div>
-                <div id="countNumber" style="display:none;" class="alert alert-success"></div>
+                <div id="btninnumber" class="btn btn-success" onlick="countNumber()">Số lượng số nguyên></div>
+                <div id="countnumber" style="display:none;" class="alert alert-success"></div>
               </div>
             </div>
           </div>
+
+    <!-- 10.So sánh số lượng số dương và số âm   -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <div class="form-control">
+                <label> So sánh số lượng số dương và số âm trong mảng </label>
+              </div>
+            </div>
+           
+          </div>
+          <div id="btninnumber" class="btn btn-success" onlick="compare()">Số nào nhiều hơn</div>
+          <div id="showResult" style="display:none;" class="alert alert-success"></div>
+          
+        </div>
+      </div>
+    </div>
+
+
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
